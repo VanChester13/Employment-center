@@ -1,0 +1,230 @@
+.wrapper {
+  display: flex;
+  box-sizing: border-box;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 0;
+  color: black;
+
+  @media (min-width: 520px) {
+    padding: 20px 18px;
+    max-width: 50%;
+    border-bottom: none;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 50%;
+  }
+
+  @media (min-width: 992px) {
+    width: 33.3%;
+  }
+
+  @media (min-width: 1100px) {
+    max-width: 25%;
+  }
+
+  @media (min-width: 1300px) {
+    max-width: 20%;
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-flow: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.288);
+    padding: 30px 30px;
+    border-radius: 30px;
+    height: 360px;
+  }
+
+  .imgBlock {
+    align-self: center;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background-color: grey;
+    border-radius: 30%;
+    margin-bottom: 10px;
+  }
+
+  .showMoreBtn {
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 700;
+  }
+}
+
+
+.overlay {
+  display: none;
+  flex-direction: column;
+  background: rgba($color: #000000, $alpha: 0.5);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 150;
+
+  + .overlay {
+    background: transparent;
+  }
+
+  @media only screen and (min-width: 992px) {
+    &_center {
+      align-items: center;
+      justify-content: center;
+      padding: 0 16px;
+      > div {
+        border-radius: 15px;
+        overflow-y: hidden;
+        max-height: calc(var(--vh) * 100 - var(--headerHeight));
+        border-radius: 30px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    &_bottom {
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0;
+
+      > div {
+        max-height: calc(var(--vh) * 100 - var(--headerHeight));
+        width: 100%;
+      }
+
+      @media only screen and (min-width: 768px) {
+        align-items: center;
+        justify-content: center;
+        padding: 0 16px;
+      }
+    }
+  }
+}
+
+.activeModal {
+  display: flex;
+  flex-direction: column;
+  background: rgba($color: #000000, $alpha: 0.5);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 150;
+}
+
+
+.modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.07);
+  padding: 30px 0 30px 30px;
+  transition: 0.2s all;
+  box-sizing: border-box;
+  background-color: white;
+  margin-right: auto;
+
+  @media only screen and (min-width: 992px) {
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: auto;
+    flex-direction: row;
+    max-width: 980px;
+    height: 650px;
+  }
+
+  .btnCansel {
+    position: absolute;
+    top: 0px;
+    right: 6px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 101;
+    opacity: 1;
+  }
+
+  .btnCansel:before,
+  .btnCansel:after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 8px;
+    width: 30px;
+    height: 5px;
+    background: rgb(29, 29, 29);
+  }
+
+  .btnCansel:before {
+    transform: rotate(45deg);
+  }
+
+  .btnCansel:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.no_right_border {
+  @media only screen and (min-width: 768px) {
+    *[class*="modal-header"] {
+      border-radius: 10px 0 0 0;
+    }
+    *[class*="modal-body"] {
+      border-radius: 0 0 0 10px;
+    }
+  }
+}
+
+.contentModal {
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.jobName {
+  margin: 0 0 20px 0;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.industry {
+  font-size: 22px;
+  margin: 0 0 10px 0;
+}
+
+.jobPrice {
+  font-size: 22px;
+  margin: 0 0 10px 0;
+}
+
+.chart {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+
+.link {
+  font-size: 18px;
+  margin: 0 0 40px 0;
+}
+.respondBtn {
+  margin: 20px 0;
+  padding: 5px 30px;
+  border-radius: 15px;
+  cursor: pointer;
+}

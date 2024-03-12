@@ -1,0 +1,51 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(0, 0, 0);
+
+  .position,
+  .salary {
+    margin-right: 25px;
+    width: "200px";
+    p {
+      margin: 0 0 5px 0;
+    }
+    input {
+      border-radius: 15px;
+      padding: 3px 10px;
+      font-size: 16px;
+    }
+    input:hover {
+      background: rgb(153, 147, 211);
+      cursor: pointer;
+    }
+  }
+
+  .withoutSalary {
+    display: flex;
+    align-items: end;
+    width: 200px;
+    height: 40px;
+    align-self: flex-end;
+    margin-right: 60px;
+    input {
+      width: 25px;
+      height: 25px;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+  }
+
+  .btn {
+    padding: 5px 40px;
+    border-radius: 15px;
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 20px;
+  }
+  .btn:hover {
+    background: rgb(153, 147, 211);
+  }
+}
