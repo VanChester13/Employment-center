@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Employment-center/static/css/main.f5ba72ba.css",
+    "main.js": "/Employment-center/static/js/main.5131ced5.js",
+    "static/js/453.63f6b601.chunk.js": "/Employment-center/static/js/453.63f6b601.chunk.js",
+    "static/js/633.f49695cb.chunk.js": "/Employment-center/static/js/633.f49695cb.chunk.js",
+    "static/media/img1.png": "/Employment-center/static/media/img1.936c87ff6fae90bb3c6f.png",
+    "static/media/img2.png": "/Employment-center/static/media/img2.81f3732162f877d6b5bd.png",
+    "static/media/img3.png": "/Employment-center/static/media/img3.322ed1d803de31e6e8a8.png",
+    "static/media/img4.png": "/Employment-center/static/media/img4.9471bf40e9915c410396.png",
+    "static/media/img7.png": "/Employment-center/static/media/img7.1cab3569337271f2dcfa.png",
+    "static/media/img6.png": "/Employment-center/static/media/img6.47fcc3d96fc6f36ca731.png",
+    "static/media/img5.png": "/Employment-center/static/media/img5.ed4bd9d395910948a92d.png",
+    "index.html": "/Employment-center/index.html",
+    "main.f5ba72ba.css.map": "/Employment-center/static/css/main.f5ba72ba.css.map",
+    "main.5131ced5.js.map": "/Employment-center/static/js/main.5131ced5.js.map",
+    "453.63f6b601.chunk.js.map": "/Employment-center/static/js/453.63f6b601.chunk.js.map",
+    "633.f49695cb.chunk.js.map": "/Employment-center/static/js/633.f49695cb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5ba72ba.css",
+    "static/js/main.5131ced5.js"
+  ]
+}
